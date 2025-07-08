@@ -19,29 +19,26 @@
             
             <div class="form">
                 <div name="contactform" id="contactform">
-                    <form name="contact" method="post" action="index.html" id="contact">
+                    <form name="contact" method="post" action="https://api.web3forms.com/submit" id="contact">
                             <table border="0">    
-                            
+                            <input type="hidden" name="access_key" value="806893ec-be83-4696-9e78-36c7bfdf3041">
+                            <input type="hidden" name="subject" value="Neues Email von ernst-wohlwend.ch">
+                            <input type="hidden" name="ccemail" value="ernst@bwohlwend.ch">
+                            <input type="hidden" name="redirect" value="https://ernst-wohlwend.ch/contact/thanks.html">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                             <tr><td colspan="2"><textarea id="pfo1" name="comments" accesskey="C" rows="10" cols="185"></textarea></td></tr>
                             <tr><td>Name/Vorname:</td><td class="formgenerell"><input id="pfo2" name="name" type="text" value="" /></td></tr>
                             <tr><td>Adresse:</td><td class="formgenerell"><input id="pfo3" name="adresse" type="text" value="" /></td></tr>
                             <tr><td>Tel./Fax:</td><td class="formgenerell"><input id="pfo4" name="telfax" type="text" value="" /></td></tr>
                             <tr><td>Mail:</td><td class="formgenerell"><input id="pfo5" name="email" type="text" value="" /></td></tr>
-                            <tr class="formurl"><td nowrap="nowrap">Bot-Test (leave blank):</td><td class="formgenerell"><input id="pfo6" name="homepage" type="text" value="" /></td></tr>                                                    
-                            
+                            <tr><td colspan="2"><div class="h-captcha" data-captcha="true"></div></td></tr>
+
                             <tr><td></td><td><input  class="formbutton" type="submit" name="save" value="Abschicken" accesskey="S" /></td></tr>
                             </table>
                             
                         </form>
                 </div>
             </div>
-        </div></div><script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.bwohlwend.ch/" : "http://stats.bwohlwend.ch/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://stats.bwohlwend.ch/piwik.php?idsite=2" style="border:0" alt="" /></p></noscript></body></html>
+        </div></div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>    
+    </body></html>
